@@ -1,0 +1,2 @@
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\web-api-catalogo\obj\Debug\web-api-catalogo.csproj.AssemblyReference.cache
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\web-api-catalogo\obj\Debug\web-api-catalogo.csproj.CoreCompileInputs.cache

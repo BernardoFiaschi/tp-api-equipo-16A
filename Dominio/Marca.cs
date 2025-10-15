@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Dominio.Objetos
+namespace Dominio
 {
     public class Marca
     {

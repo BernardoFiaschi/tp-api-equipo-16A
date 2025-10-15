@@ -1,0 +1,11 @@
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\bin\Debug\Negocio.dll
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\bin\Debug\Negocio.pdb
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\bin\Debug\Dominio.dll
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\bin\Debug\Dominio.pdb
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\obj\Debug\Negocio.dll
+C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\obj\Debug\Negocio.pdb

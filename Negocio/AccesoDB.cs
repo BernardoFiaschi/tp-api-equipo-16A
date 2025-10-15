@@ -1,5 +1,9 @@
 ﻿using System;
-using Microsoft.Data.SqlClient;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Negocio
 {
@@ -7,13 +11,16 @@ namespace Negocio
     {
         private SqlConnection conexion;
         private SqlCommand comando;
-        private SqlDataReader? lector;
-
-        public SqlDataReader? Lector => lector;
+        private SqlDataReader lector;
+        public SqlDataReader Lector
+        {
+            get { return lector; }
+        }
 
         public AccesoDB()
         {
-            conexion = new SqlConnection(DbConfig.ConnectionString);
+            conexion = new SqlConnection(System.Configuration.ConfigurationManager.AppSettings["cadenaConexion"]);
+            //conexion = new SqlConnection("server=.\\SQLEXPRESS; database=POKEDEX_DB; integrated security=true");
             comando = new SqlCommand();
         }
 
@@ -27,11 +34,7 @@ namespace Negocio
         {
             comando.CommandType = System.Data.CommandType.StoredProcedure;
             comando.CommandText = sp;
-        }
 
-        public void setearParametro(string nombre, object valor)
-        {
-            comando.Parameters.AddWithValue(nombre, valor ?? DBNull.Value);
         }
 
         public void ejecutarLectura()
@@ -44,7 +47,7 @@ namespace Negocio
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al ejecutar lectura: " + ex.Message);
+                throw ex;
             }
         }
 
@@ -58,23 +61,35 @@ namespace Negocio
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al ejecutar accion: " + ex.Message);
+                throw ex;
             }
+        }
+
+        public int ejecutarAccionScalar()
+        {
+            comando.Connection = conexion;
+            try
+            {
+                conexion.Open();
+                return int.Parse(comando.ExecuteScalar().ToString());
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void setearParametro(string nombre, object valor)
+        {
+            comando.Parameters.AddWithValue(nombre, valor);
         }
 
         public void cerrarConexion()
         {
-            try
-            {
-                if (lector != null && !lector.IsClosed) lector.Close();
-                if (conexion != null && conexion.State == System.Data.ConnectionState.Open) conexion.Close();
-                comando.Parameters.Clear();
-            }
-            catch
-            {
-
-            }
+            if (lector != null)
+                lector.Close();
+            conexion.Close();
         }
+
     }
 }
-

@@ -1,0 +1,113 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = tp-api-equipo-16A
+build_property.RootNamespace = tp-api-equipo-16A
+build_property.ProjectDir = C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/Api.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXEFwaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcQXBpR3JvdXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/CollectionModelDescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcQ29sbGVjdGlvbk1vZGVsRGVzY3JpcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/ComplexTypeModelDescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcQ29tcGxleFR5cGVNb2RlbERlc2NyaXB0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/DictionaryModelDescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcRGljdGlvbmFyeU1vZGVsRGVzY3JpcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/EnumTypeModelDescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcRW51bVR5cGVNb2RlbERlc2NyaXB0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcSGVscFBhZ2VBcGlNb2RlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcSW1hZ2VTYW1wbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcSW52YWxpZFNhbXBsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/KeyValuePairModelDescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcS2V5VmFsdWVQYWlyTW9kZWxEZXNjcmlwdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/ModelDescriptionLink.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcTW9kZWxEZXNjcmlwdGlvbkxpbmsuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcUGFyYW1ldGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcU2FtcGxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/SimpleTypeModelDescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcU2ltcGxlVHlwZU1vZGVsRGVzY3JpcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXERpc3BsYXlUZW1wbGF0ZXNcVGV4dFNhbXBsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Help/ResourceModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xIZWxwXFJlc291cmNlTW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Areas/HelpPage/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xBcmVhc1xIZWxwUGFnZVxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xWaWV3c1xTaGFyZWRcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/flore/OneDrive/Escritorio/TEC. PROGRAMACION/Programacion III/repos/wb-api/web-api-catalogo/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d2ViLWFwaS1jYXRhbG9nb1xWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
