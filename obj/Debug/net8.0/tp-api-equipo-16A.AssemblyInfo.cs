@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tp-api-equipo-16A")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26fe1e01aee2eef8e33abd448b9d375a2f28b2cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33804b4eadbc73368bceac8e3bf0c4f40c9587e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("tp-api-equipo-16A")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tp-api-equipo-16A")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

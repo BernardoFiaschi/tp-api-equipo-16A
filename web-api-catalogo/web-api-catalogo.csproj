@@ -155,16 +155,16 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\ArticuloController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
-    <Compile Include="DTOs\ImagenCreateDTO.cs" />
-    <Compile Include="DTOs\ItemRef.cs" />
-    <Compile Include="DTOs\ProductoCreateDTO.cs" />
-    <Compile Include="DTOs\ProductoDTO.cs" />
-    <Compile Include="DTOs\ProductoUpdateDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ArticuloDTO.cs" />
+    <Compile Include="Models\CategoriaDTO.cs" />
+    <Compile Include="Models\ImagenDTO.cs" />
+    <Compile Include="Models\MarcaDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -235,7 +235,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\bootstrap.min.js.map" />

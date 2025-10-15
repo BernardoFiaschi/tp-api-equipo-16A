@@ -3,12 +3,50 @@
   "WorkspaceRootPath": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|c:\\users\\flore\\onedrive\\escritorio\\tec. programacion\\programacion iii\\repos\\wb-api\\web-api-catalogo\\controllers\\articulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|solutionrelative:web-api-catalogo\\controllers\\articulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|c:\\users\\flore\\onedrive\\escritorio\\tec. programacion\\programacion iii\\repos\\wb-api\\web-api-catalogo\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|solutionrelative:web-api-catalogo\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|c:\\users\\flore\\onedrive\\escritorio\\tec. programacion\\programacion iii\\repos\\wb-api\\web-api-catalogo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|solutionrelative:web-api-catalogo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|c:\\users\\flore\\onedrive\\escritorio\\tec. programacion\\programacion iii\\repos\\wb-api\\web-api-catalogo\\areas\\helppage\\controllers\\helpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|solutionrelative:web-api-catalogo\\areas\\helppage\\controllers\\helpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{99529B1F-F986-4E70-BD97-28A7B7BCB856}|Negocio\\Negocio.csproj|c:\\users\\flore\\onedrive\\escritorio\\tec. programacion\\programacion iii\\repos\\wb-api\\negocio\\accesodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99529B1F-F986-4E70-BD97-28A7B7BCB856}|Negocio\\Negocio.csproj|solutionrelative:negocio\\accesodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|c:\\users\\flore\\onedrive\\escritorio\\tec. programacion\\programacion iii\\repos\\wb-api\\web-api-catalogo\\models\\articulodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|solutionrelative:web-api-catalogo\\models\\articulodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|web-api-catalogo||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|c:\\users\\flore\\onedrive\\escritorio\\tec. programacion\\programacion iii\\repos\\wb-api\\web-api-catalogo\\models\\marcadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|solutionrelative:web-api-catalogo\\models\\marcadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|c:\\users\\flore\\onedrive\\escritorio\\tec. programacion\\programacion iii\\repos\\wb-api\\web-api-catalogo\\models\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|solutionrelative:web-api-catalogo\\models\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|c:\\users\\flore\\onedrive\\escritorio\\tec. programacion\\programacion iii\\repos\\wb-api\\web-api-catalogo\\models\\imagendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|solutionrelative:web-api-catalogo\\models\\imagendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{99529B1F-F986-4E70-BD97-28A7B7BCB856}|Negocio\\Negocio.csproj|c:\\users\\flore\\onedrive\\escritorio\\tec. programacion\\programacion iii\\repos\\wb-api\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99529B1F-F986-4E70-BD97-28A7B7BCB856}|Negocio\\Negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F0C0B5-CEDB-4793-A395-A12B10C99873}|web-api-catalogo\\web-api-catalogo.csproj|c:\\users\\flore\\onedrive\\escritorio\\tec. programacion\\programacion iii\\repos\\wb-api\\web-api-catalogo\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,19 +61,135 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ArticuloController.cs",
+              "DocumentMoniker": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Controllers\\ArticuloController.cs",
+              "RelativeDocumentMoniker": "web-api-catalogo\\Controllers\\ArticuloController.cs",
+              "ToolTip": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Controllers\\ArticuloController.cs",
+              "RelativeToolTip": "web-api-catalogo\\Controllers\\ArticuloController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T14:23:37.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HelpController.cs",
+              "DocumentMoniker": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Areas\\HelpPage\\Controllers\\HelpController.cs",
+              "RelativeDocumentMoniker": "web-api-catalogo\\Areas\\HelpPage\\Controllers\\HelpController.cs",
+              "ToolTip": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Areas\\HelpPage\\Controllers\\HelpController.cs",
+              "RelativeToolTip": "web-api-catalogo\\Areas\\HelpPage\\Controllers\\HelpController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T14:12:59.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "web-api-catalogo\\Controllers\\ValuesController.cs",
+              "ToolTip": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "web-api-catalogo\\Controllers\\ValuesController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T14:12:34.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "web-api-catalogo\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "web-api-catalogo\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T14:12:21.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "web-api-catalogo",
+              "DocumentMoniker": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\web-api-catalogo.csproj",
+              "RelativeDocumentMoniker": "web-api-catalogo\\web-api-catalogo.csproj",
+              "ToolTip": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\web-api-catalogo.csproj",
+              "RelativeToolTip": "web-api-catalogo\\web-api-catalogo.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-15T05:13:41.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MarcaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Models\\MarcaDTO.cs",
+              "RelativeDocumentMoniker": "web-api-catalogo\\Models\\MarcaDTO.cs",
+              "ToolTip": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Models\\MarcaDTO.cs",
+              "RelativeToolTip": "web-api-catalogo\\Models\\MarcaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T05:07:14.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoriaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Models\\CategoriaDTO.cs",
+              "RelativeDocumentMoniker": "web-api-catalogo\\Models\\CategoriaDTO.cs",
+              "ToolTip": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Models\\CategoriaDTO.cs",
+              "RelativeToolTip": "web-api-catalogo\\Models\\CategoriaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T05:06:27.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AccesoDB.cs",
               "DocumentMoniker": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\Negocio\\AccesoDB.cs",
               "RelativeDocumentMoniker": "Negocio\\AccesoDB.cs",
               "ToolTip": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\Negocio\\AccesoDB.cs",
               "RelativeToolTip": "Negocio\\AccesoDB.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAMwBUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T04:56:01.094Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
+              "Title": "ImagenDTO.cs",
+              "DocumentMoniker": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Models\\ImagenDTO.cs",
+              "RelativeDocumentMoniker": "web-api-catalogo\\Models\\ImagenDTO.cs",
+              "ToolTip": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Models\\ImagenDTO.cs",
+              "RelativeToolTip": "web-api-catalogo\\Models\\ImagenDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T05:06:55.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArticuloDTO.cs",
+              "DocumentMoniker": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Models\\ArticuloDTO.cs",
+              "RelativeDocumentMoniker": "web-api-catalogo\\Models\\ArticuloDTO.cs",
+              "ToolTip": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\web-api-catalogo\\Models\\ArticuloDTO.cs",
+              "RelativeToolTip": "web-api-catalogo\\Models\\ArticuloDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T05:06:02.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ArticuloNegocio.cs",
               "DocumentMoniker": "C:\\Users\\flore\\OneDrive\\Escritorio\\TEC. PROGRAMACION\\Programacion III\\repos\\wb-api\\Negocio\\ArticuloNegocio.cs",
               "RelativeDocumentMoniker": "Negocio\\ArticuloNegocio.cs",
