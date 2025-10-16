@@ -1,53 +1,49 @@
 ﻿using Dominio;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Negocio
 {
     public class ArticuloNegocio
     {
-        //consultas a db
         string consultaPrincipal = @"
-                SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio,
-                       M.Id AS IdMarca, M.Descripcion AS Marca,
-                       C.Id AS IdCategoria, C.Descripcion AS Categoria
-                FROM ARTICULOS A
-                LEFT JOIN MARCAS M ON A.IdMarca = M.Id
-                LEFT JOIN CATEGORIAS C ON A.IdCategoria = C.Id
-                ORDER BY A.Nombre";
-        string consultaPorId = @"
-                SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio,
-                       M.Id AS IdMarca, M.Descripcion AS Marca,
-                       C.Id AS IdCategoria, C.Descripcion AS Categoria
-                FROM ARTICULOS A
-                LEFT JOIN MARCAS M ON A.IdMarca = M.Id
-                LEFT JOIN CATEGORIAS C ON A.IdCategoria = C.Id
-                WHERE A.Id = @id";
-        string consultaAgregar = @"
-                INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio)
-                OUTPUT INSERTED.Id
-                VALUES (@cod, @nom, @desc, @idMarca, @idCat, @precio);";
-        string consultaModificar = @"
-                UPDATE ARTICULOS
-                SET Codigo=@cod, Nombre=@nom, Descripcion=@desc,
-                    IdMarca=@idMarca, IdCategoria=@idCat, Precio=@precio
-                WHERE Id=@id";
+            SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio,
+                   M.Id AS IdMarca, M.Descripcion AS Marca,
+                   C.Id AS IdCategoria, C.Descripcion AS Categoria
+            FROM ARTICULOS A
+            LEFT JOIN MARCAS M ON A.IdMarca = M.Id
+            LEFT JOIN CATEGORIAS C ON A.IdCategoria = C.Id
+            ORDER BY A.Nombre";
 
+        string consultaPorId = @"
+            SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio,
+                   M.Id AS IdMarca, M.Descripcion AS Marca,
+                   C.Id AS IdCategoria, C.Descripcion AS Categoria
+            FROM ARTICULOS A
+            LEFT JOIN MARCAS M ON A.IdMarca = M.Id
+            LEFT JOIN CATEGORIAS C ON A.IdCategoria = C.Id
+            WHERE A.Id = @id";
+
+        string consultaAgregar = @"
+            INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio)
+            OUTPUT INSERTED.Id
+            VALUES (@cod, @nom, @desc, @idMarca, @idCat, @precio);";
+
+        string consultaModificar = @"
+            UPDATE ARTICULOS
+            SET Codigo=@cod, Nombre=@nom, Descripcion=@desc,
+                IdMarca=@idMarca, IdCategoria=@idCat, Precio=@precio
+            WHERE Id=@id";
 
         public List<Articulo> Listar()
         {
-            List<Articulo> lista = new List<Articulo>();
-            AccesoDB datos = new AccesoDB();
-
+            var lista = new List<Articulo>();
+            var datos = new AccesoDB();
             try
             {
-                
                 datos.setearConsulta(consultaPrincipal);
                 datos.ejecutarLectura();
-
                 while (datos.Lector.Read())
                 {
                     var art = new Articulo
@@ -68,14 +64,15 @@ namespace Negocio
                             Descripcion = datos.Lector["Categoria"] as string
                         }
                     };
+
+                    var imgNeg = new ImagenNegocio();
+                    art.Imagenes = imgNeg.ListarPorArticulo(art.Id);
+
                     lista.Add(art);
                 }
                 return lista;
             }
-            finally
-            {
-                datos.cerrarConexion();
-            }
+            finally { datos.cerrarConexion(); }
         }
 
         public Articulo ObtenerPorId(int id)
@@ -84,7 +81,7 @@ namespace Negocio
             try
             {
                 datos.setearConsulta(consultaPorId);
-                                datos.setearParametro("@id", id);
+                datos.setearParametro("@id", id);
                 datos.ejecutarLectura();
 
                 Articulo art = null;
@@ -108,6 +105,9 @@ namespace Negocio
                             Descripcion = datos.Lector["Categoria"] as string
                         }
                     };
+
+                    var imgNeg = new ImagenNegocio();
+                    art.Imagenes = imgNeg.ListarPorArticulo(art.Id);
                 }
                 return art;
             }
@@ -131,7 +131,6 @@ namespace Negocio
                     return (int)datos.Lector[0];
 
                 throw new InvalidOperationException("No se pudo obtener el Id insertado.");
-
             }
             finally { datos.cerrarConexion(); }
         }
@@ -159,13 +158,11 @@ namespace Negocio
             var datos = new AccesoDB();
             try
             {
-                // Primero borro imágenes (1:N)
                 datos.setearConsulta("DELETE FROM IMAGENES WHERE IdArticulo=@id");
                 datos.setearParametro("@id", id);
                 datos.ejecutarAccion();
                 datos.cerrarConexion();
 
-                // Luego el artículo
                 datos = new AccesoDB();
                 datos.setearConsulta("DELETE FROM ARTICULOS WHERE Id=@id");
                 datos.setearParametro("@id", id);
@@ -174,5 +171,66 @@ namespace Negocio
             finally { datos.cerrarConexion(); }
         }
 
+        public List<Articulo> Buscar(string texto, int? idMarca, int? idCategoria, decimal? precioMin, decimal? precioMax)
+        {
+            var lista = new List<Articulo>();
+            var datos = new AccesoDB();
+            try
+            {
+                var sb = new StringBuilder(@"
+                    SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio,
+                           M.Id AS IdMarca, M.Descripcion AS Marca,
+                           C.Id AS IdCategoria, C.Descripcion AS Categoria
+                    FROM ARTICULOS A
+                    LEFT JOIN MARCAS M ON A.IdMarca = M.Id
+                    LEFT JOIN CATEGORIAS C ON A.IdCategoria = C.Id
+                    WHERE 1=1 ");
+
+                if (!string.IsNullOrWhiteSpace(texto))
+                    sb.Append(" AND (A.Codigo LIKE @t OR A.Nombre LIKE @t OR A.Descripcion LIKE @t) ");
+                if (idMarca.HasValue) sb.Append(" AND A.IdMarca = @idMarca ");
+                if (idCategoria.HasValue) sb.Append(" AND A.IdCategoria = @idCategoria ");
+                if (precioMin.HasValue) sb.Append(" AND A.Precio >= @pmin ");
+                if (precioMax.HasValue) sb.Append(" AND A.Precio <= @pmax ");
+                sb.Append(" ORDER BY A.Nombre ");
+
+                datos.setearConsulta(sb.ToString());
+                if (!string.IsNullOrWhiteSpace(texto)) datos.setearParametro("@t", "%" + texto + "%");
+                if (idMarca.HasValue) datos.setearParametro("@idMarca", idMarca.Value);
+                if (idCategoria.HasValue) datos.setearParametro("@idCategoria", idCategoria.Value);
+                if (precioMin.HasValue) datos.setearParametro("@pmin", precioMin.Value);
+                if (precioMax.HasValue) datos.setearParametro("@pmax", precioMax.Value);
+
+                datos.ejecutarLectura();
+                while (datos.Lector.Read())
+                {
+                    var art = new Articulo
+                    {
+                        Id = (int)datos.Lector["Id"],
+                        Codigo = datos.Lector["Codigo"] as string,
+                        Nombre = datos.Lector["Nombre"] as string,
+                        Descripcion = datos.Lector["Descripcion"] as string,
+                        Precio = Convert.ToDecimal(datos.Lector["Precio"]),
+                        Marca = new Marca
+                        {
+                            Id = datos.Lector["IdMarca"] != DBNull.Value ? (int)datos.Lector["IdMarca"] : 0,
+                            Descripcion = datos.Lector["Marca"] as string
+                        },
+                        Categoria = new Categoria
+                        {
+                            Id = datos.Lector["IdCategoria"] != DBNull.Value ? (int)datos.Lector["IdCategoria"] : 0,
+                            Descripcion = datos.Lector["Categoria"] as string
+                        }
+                    };
+
+                    var imgNeg = new ImagenNegocio();
+                    art.Imagenes = imgNeg.ListarPorArticulo(art.Id);
+
+                    lista.Add(art);
+                }
+                return lista;
+            }
+            finally { datos.cerrarConexion(); }
+        }
     }
 }

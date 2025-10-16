@@ -9,3 +9,14 @@ C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-a
 C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\obj\Debug\Negocio.csproj.Up2Date
 C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\obj\Debug\Negocio.dll
 C:\Users\flore\OneDrive\Escritorio\TEC. PROGRAMACION\Programacion III\repos\wb-api\Negocio\obj\Debug\Negocio.pdb
+C:\Users\berna\OneDrive\Desktop\actividad 5\tp-api-equipo-16A-main\tp-api-equipo-16A-main\Negocio\bin\Debug\Negocio.dll
+C:\Users\berna\OneDrive\Desktop\actividad 5\tp-api-equipo-16A-main\tp-api-equipo-16A-main\Negocio\bin\Debug\Negocio.pdb
+C:\Users\berna\OneDrive\Desktop\actividad 5\tp-api-equipo-16A-main\tp-api-equipo-16A-main\Negocio\bin\Debug\Dominio.dll
+C:\Users\berna\OneDrive\Desktop\actividad 5\tp-api-equipo-16A-main\tp-api-equipo-16A-main\Negocio\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\berna\OneDrive\Desktop\actividad 5\tp-api-equipo-16A-main\tp-api-equipo-16A-main\Negocio\bin\Debug\Dominio.pdb
+C:\Users\berna\OneDrive\Desktop\actividad 5\tp-api-equipo-16A-main\tp-api-equipo-16A-main\Negocio\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\berna\OneDrive\Desktop\actividad 5\tp-api-equipo-16A-main\tp-api-equipo-16A-main\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\berna\OneDrive\Desktop\actividad 5\tp-api-equipo-16A-main\tp-api-equipo-16A-main\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\berna\OneDrive\Desktop\actividad 5\tp-api-equipo-16A-main\tp-api-equipo-16A-main\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\berna\OneDrive\Desktop\actividad 5\tp-api-equipo-16A-main\tp-api-equipo-16A-main\Negocio\obj\Debug\Negocio.dll
+C:\Users\berna\OneDrive\Desktop\actividad 5\tp-api-equipo-16A-main\tp-api-equipo-16A-main\Negocio\obj\Debug\Negocio.pdb
