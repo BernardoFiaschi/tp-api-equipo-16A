@@ -1,6 +1,0 @@
-@tp_api_equipo_16A_HostAddress = http://localhost:5011
-
-GET {{tp_api_equipo_16A_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
