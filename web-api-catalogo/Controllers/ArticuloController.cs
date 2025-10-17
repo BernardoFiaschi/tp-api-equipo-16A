@@ -5,157 +5,178 @@ using System.Data.SqlClient;
 using Dominio;
 using Negocio;
 using web_api_catalogo.Models;
+using System.Net.Http;
+using System.Collections.Generic;
+using System.Web.Mvc;
 
 namespace web_api_catalogo.Controllers
 {
-    [RoutePrefix("api/articulos")]
     public class ArticuloController : ApiController
     {
-        [HttpGet]
-        [Route("")]
-        public IHttpActionResult Get()
+        public List<Articulo> Get()
         {
-            var negocio = new ArticuloNegocio();
-            var lista = negocio.Listar();
-            return Ok(lista);
+            try
+            {
+                ArticuloNegocio negocio = new ArticuloNegocio();
+                return negocio.Listar();
+            }
+            catch (Exception)
+            {
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+            }
+            
         }
 
-        [HttpGet]
-        [Route("{id:int}")]
-        public IHttpActionResult GetById(int id)
+        public Articulo Get(int id)
         {
-            var negocio = new ArticuloNegocio();
-            var art = negocio.ObtenerPorId(id);
-            if (art == null) return NotFound();
-            return Ok(art);
-        }
+            try
+            {
+                ArticuloNegocio negocio = new ArticuloNegocio();
+                Articulo art = new Articulo();
 
-        [HttpPost]
-        [Route("")]
-        public IHttpActionResult Create([FromBody] ArticuloDTO dto)
+                art = negocio.ObtenerPorId(id);
+
+                if (art == null)
+                {
+                    return art;
+                }
+                else
+                {
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
+
+                }
+
+            }
+            catch (Exception)
+            {
+
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+            }
+            
+        }
+        public HttpResponseMessage Post([FromBody] ArticuloDTO dto)
         {
-            if (dto == null) return BadRequest("Payload requerido.");
-            if (string.IsNullOrWhiteSpace(dto.Codigo)) return BadRequest("Codigo requerido.");
-            if (string.IsNullOrWhiteSpace(dto.Nombre)) return BadRequest("Nombre requerido.");
-            if (dto.IdMarca <= 0) return BadRequest("IdMarca invalido.");
-            if (dto.IdCategoria <= 0) return BadRequest("IdCategoria invalido.");
-            if (dto.Precio < 0) return BadRequest("Precio invalido.");
+            if (dto == null) return Request.CreateResponse(HttpStatusCode.BadRequest, "Articulo requerido.");
+            if (string.IsNullOrWhiteSpace(dto.Codigo)) return Request.CreateResponse(HttpStatusCode.BadRequest, "Codigo requerido.");
+            if (string.IsNullOrWhiteSpace(dto.Nombre)) return Request.CreateResponse(HttpStatusCode.BadRequest, "Nombre requerido.");
+            if (dto.IdMarca <= 0) return Request.CreateResponse(HttpStatusCode.BadRequest, "La marca no existe.");
+            if (dto.IdCategoria <= 0) return Request.CreateResponse(HttpStatusCode.BadRequest, "La categoria no existe.");
+            if (dto.Precio < 0) return Request.CreateResponse(HttpStatusCode.BadRequest, "Precio invalido.");
 
             try
             {
-                var negocio = new ArticuloNegocio();
-                var id = negocio.Agregar(new Articulo
+                ArticuloNegocio negocio = new ArticuloNegocio();
+                Articulo articulo = new Articulo
                 {
-                    Codigo = dto.Codigo.Trim(),
-                    Nombre = dto.Nombre.Trim(),
-                    Descripcion = dto.Descripcion?.Trim(),
+                    Codigo = dto.Codigo,
+                    Nombre = dto.Nombre,
+                    Descripcion = dto.Descripcion,
                     Marca = new Marca { Id = dto.IdMarca },
                     Categoria = new Categoria { Id = dto.IdCategoria },
                     Precio = dto.Precio
-                });
-                var creado = negocio.ObtenerPorId(id);
-                return Created($"api/articulos/{id}", creado);
-            }
-            catch (SqlException ex) when (ex.Number == 2627 || ex.Number == 2601)
-            {
-                return Content(HttpStatusCode.Conflict, "Codigo duplicado.");
+                };
+                negocio.Agregar(articulo);
+
+                return Request.CreateResponse(HttpStatusCode.OK, "Articulo agregado correctamente.");
+
             }
             catch (Exception ex)
             {
-                return InternalServerError(ex);
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.ToString());
             }
         }
-
-        [HttpPut]
-        [Route("{id:int}")]
-        public IHttpActionResult Update(int id, [FromBody] ArticuloDTO dto)
+        
+       
+        public HttpResponseMessage Put(int id, [FromBody] ArticuloDTO dto)
         {
-            if (dto == null) return BadRequest("Payload requerido.");
-            if (string.IsNullOrWhiteSpace(dto.Nombre)) return BadRequest("Nombre requerido.");
-            if (dto.IdMarca <= 0) return BadRequest("IdMarca invalido.");
-            if (dto.IdCategoria <= 0) return BadRequest("IdCategoria invalido.");
-            if (dto.Precio < 0) return BadRequest("Precio invalido.");
+            if (dto == null) return Request.CreateResponse(HttpStatusCode.BadRequest, "Articulo requerido.");
+            if (string.IsNullOrWhiteSpace(dto.Codigo)) return Request.CreateResponse(HttpStatusCode.BadRequest, "Codigo requerido.");
+            if (string.IsNullOrWhiteSpace(dto.Nombre)) return Request.CreateResponse(HttpStatusCode.BadRequest, "Nombre requerido.");
+            if (dto.IdMarca <= 0) return Request.CreateResponse(HttpStatusCode.BadRequest, "La marca no existe.");
+            if (dto.IdCategoria <= 0) return Request.CreateResponse(HttpStatusCode.BadRequest, "La categoria no existe.");
+            if (dto.Precio < 0) return Request.CreateResponse(HttpStatusCode.BadRequest, "Precio invalido.");
 
-            var negocio = new ArticuloNegocio();
-            var existente = negocio.ObtenerPorId(id);
-            if (existente == null) return NotFound();
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            Articulo existente = negocio.ObtenerPorId(id);
+            if (existente == null) return Request.CreateResponse(HttpStatusCode.NotFound, "No hay articulo con ese ID.");
 
             try
             {
-                if (!string.IsNullOrWhiteSpace(dto.Codigo))
-                    existente.Codigo = dto.Codigo.Trim();
-                existente.Nombre = dto.Nombre.Trim();
-                existente.Descripcion = dto.Descripcion?.Trim();
+                existente.Codigo = dto.Codigo;
+                existente.Nombre = dto.Nombre;
+                existente.Descripcion = dto.Descripcion;
                 existente.Marca = new Marca { Id = dto.IdMarca };
                 existente.Categoria = new Categoria { Id = dto.IdCategoria };
                 existente.Precio = dto.Precio;
 
                 negocio.Modificar(existente);
                 var actualizado = negocio.ObtenerPorId(id);
-                return Ok(actualizado);
-            }
-            catch (SqlException ex) when (ex.Number == 2627 || ex.Number == 2601)
-            {
-                return Content(HttpStatusCode.Conflict, "Codigo duplicado.");
+
+                return Request.CreateResponse(HttpStatusCode.OK, "Articulo modificado correctamente.");
             }
             catch (Exception ex)
             {
-                return InternalServerError(ex);
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.ToString()); 
             }
         }
-
-        [HttpDelete]
-        [Route("{id:int}")]
-        public IHttpActionResult Delete(int id)
+        
+        public HttpResponseMessage Delete(int id)
         {
-            var negocio = new ArticuloNegocio();
-            var existente = negocio.ObtenerPorId(id);
-            if (existente == null) return NotFound();
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            Articulo existente = negocio.ObtenerPorId(id);
+            if (existente == null) return Request.CreateResponse(HttpStatusCode.NotFound, "No hay articulo con ese ID");
 
             try
             {
                 negocio.Eliminar(id);
-                return StatusCode(HttpStatusCode.NoContent);
+
+                return Request.CreateResponse(HttpStatusCode.OK, "Articulo eliminado correctamente.");
             }
             catch (Exception ex)
             {
-                return InternalServerError(ex);
+                return Request.CreateResponse(HttpStatusCode.NotFound, ex.ToString());
             }
         }
+        
 
-        [HttpPost]
-        [Route("{id:int}/imagenes")]
-        public IHttpActionResult AgregarImagenes(int id, [FromBody] AgregarImagenesDto dto)
+        public HttpResponseMessage Post([FromBody]ImagenDTO dto)
         {
-            if (dto == null) return BadRequest("Payload requerido.");
-            if (dto.IdArticulo != id) return BadRequest("IdArticulo inconsistente.");
+            if (dto == null) return Request.CreateResponse(HttpStatusCode.BadRequest, "Debe ingresar una imagen y articulo"); 
             if (dto.ImagenesUrls == null || dto.ImagenesUrls.Count == 0)
-                return BadRequest("Debe enviar al menos una imagen.");
+                return Request.CreateResponse(HttpStatusCode.BadRequest, "Debe ingresar al menos una imagen");
 
             var artNeg = new ArticuloNegocio();
-            var existente = artNeg.ObtenerPorId(id);
-            if (existente == null) return NotFound();
+            var existente = artNeg.ObtenerPorId(dto.IdArticulo);
+            if (existente == null) return Request.CreateResponse(HttpStatusCode.NotFound, "No se encontro el articulo");
 
             try
             {
                 var imgNeg = new ImagenNegocio();
-                imgNeg.AgregarVarias(id, dto.ImagenesUrls);
-                var actualizado = artNeg.ObtenerPorId(id);
-                return Ok(actualizado);
+                imgNeg.AgregarVarias(dto.IdArticulo, dto.ImagenesUrls);
+                var actualizado = artNeg.ObtenerPorId(dto.IdArticulo);
+                return Request.CreateResponse(HttpStatusCode.OK, "Imagenes agregadas correctamente.");
             }
             catch (Exception ex)
             {
-                return InternalServerError(ex);
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.ToString());
             }
         }
+        
 
-        [HttpGet]
-        [Route("buscar")]
-        public IHttpActionResult Buscar(string texto = null, int? idMarca = null, int? idCategoria = null, decimal? precioMin = null, decimal? precioMax = null)
+        public List<Articulo> Get(string texto = null, int? idMarca = null, int? idCategoria = null, decimal? precioMin = null, decimal? precioMax = null)
         {
-            var negocio = new ArticuloNegocio();
-            var lista = negocio.Buscar(texto, idMarca, idCategoria, precioMin, precioMax);
-            return Ok(lista);
+            try
+            {
+                ArticuloNegocio negocio = new ArticuloNegocio();
+                List<Articulo> lista = negocio.Buscar(texto, idMarca, idCategoria, precioMin, precioMax);
+
+                return lista;
+            }
+            catch (Exception)
+            {
+
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+            }
         }
     }
 }
