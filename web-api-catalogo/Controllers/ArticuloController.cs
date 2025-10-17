@@ -137,7 +137,6 @@ namespace web_api_catalogo.Controllers
                 return Request.CreateResponse(HttpStatusCode.NotFound, ex.ToString());
             }
         }
-        
 
         public HttpResponseMessage Post([FromBody]ImagenDTO dto)
         {
