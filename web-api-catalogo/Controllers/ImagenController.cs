@@ -1,4 +1,5 @@
-﻿using Negocio;
+﻿using Dominio;
+using Negocio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,15 +19,14 @@ namespace web_api_catalogo.Controllers
             if (dto.ImagenesUrls == null || dto.ImagenesUrls.Count == 0)
                 return Request.CreateResponse(HttpStatusCode.BadRequest, "Debe ingresar al menos una imagen");
 
-            var artNeg = new ArticuloNegocio();
-            var existente = artNeg.ObtenerPorId(dto.IdArticulo);
+            ArticuloNegocio artNeg = new ArticuloNegocio();
+            Articulo existente = artNeg.ObtenerPorId(dto.IdArticulo);
             if (existente == null) return Request.CreateResponse(HttpStatusCode.NotFound, "No se encontro el articulo");
 
             try
             {
-                var imgNeg = new ImagenNegocio();
+                ImagenNegocio imgNeg = new ImagenNegocio();
                 imgNeg.AgregarVarias(dto.IdArticulo, dto.ImagenesUrls);
-                var actualizado = artNeg.ObtenerPorId(dto.IdArticulo);
                 return Request.CreateResponse(HttpStatusCode.OK, "Imagenes agregadas correctamente.");
             }
             catch (Exception ex)
